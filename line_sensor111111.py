@@ -95,6 +95,7 @@ while True:
 
     # 라인이 검출될 때
     if ( lines is not None ):
+        add_line = 0
         for line in lines:
             x1, y1, x2, y2 = line[0]
             # print("x1, y1, x2, y2", line[0])
@@ -110,10 +111,23 @@ while True:
                 max_diff = diff
                 # final_x : 녹색선 중앙의 x 좌표점이 된다.
                 final_x = mid_point
-    
-    if ( int(final_x) != 0 ) :
+            add_line = add_line + final_x
+        avr_x = add_line / len(lines)
+    angle = theta*100*np.pi/360
+    if theta > 45 : angle = 0.2
+    if theta > 40 : angle = 0.2
+    if theta > 35 : angle = 0.2
+
+
+
+
+
+
+
+
+    if ( int(avr_x) != 0 ) :
         # 빨간점 인식 포인트, 이때 녹색선의 x값 중앙점을 가르킴. y좌표는 화면 중앙. 원 두께는 5
-        original = cv2.circle(original,(int(final_x),int((frame_crop_y1+frame_crop_y2)/2)),5,(0,0,255),-1)
+        original = cv2.circle(original,(int(avr_x),int((frame_crop_y1+frame_crop_y2)/2)),5,(0,0,255),-1)
         # 빨간 사각 영역
         original = cv2.rectangle(original,(int(frame_crop_x1),int(frame_crop_y1)),(int(frame_crop_x2),int(frame_crop_y2)),(0,0,255),1)
     frame = original
@@ -123,7 +137,7 @@ while True:
         break
     # 최종 화면
     cv2.imshow('frame', frame)
-    theta = int(( int(final_x) - 320.0 ) / 640.0 * 100)
+    theta = int(( int(avr_x) - 320.0 ) / 640.0 * 100)
     print("theta: ", theta)
     
     key = cv2.waitKey(25)
