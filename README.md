@@ -10,7 +10,7 @@
   <img src="doc/Project_Euler.png">
 </p>
 
-1. Line detection 알고리즘
+1. Line detection 알고리즘 ( Open CV 라이브러리 사용 )
  * cvtColor 함수 : 영상을 gray스케일로 변환
  * boxFilter 함수 : 노이즈를 제거하기 위해서 사용
  * Threshold 함수 : 영상을 임계값 기준으로 흑/백 으로 분류
@@ -18,7 +18,7 @@
  * HoughLinesP 함수(허프변환) : 직선으로 검출된 Line의 양 끝점을 (x1, y1, x2, y2) 형식으로 data 추출
  * 검출된 각 Line의 x값의 평균 값을 활용하여 무인이동체가 라인을 따라 움직이도록 구현
 
-2. QR코드 생성 및 인식
+2. QR코드 생성 및 인식 ( Open CV 라이브러리 사용)
  * QR코드 생성(Start, A, B, C)
  * 웹캠1에서 Start QR을 인식하면, 무인이동체 정지
  * 웹캠2에서 A or B or C QR을 인식하면, 인식된 QR 위치로 이동 후 정지
@@ -33,7 +33,7 @@
 
 ## P2. SLAM
 
-1. SSL_SLAM-ROS패키지사용
+1. SSL_SLAM-ROS패키지 사용
  * 인텔 L515 3D 라이다 센서에 적용 가능한 SSL_SLAM 패키지 사용.
  * 다른 패키지(RTABMap, Gmapping등) 사용해 보려고 했으나,
  * RTABMap은 오류와 오차가 많아서 사용하지 않았고,
@@ -46,7 +46,7 @@
 3. 피타고라스 정리
  * 시작 위치와 각 지점 A, B, C 위치간의 거리, 각도를 피타고라스 정리로 계산
  
-4. QR코드인식
+4. QR코드인식 ( Open CV 라이브러리 사용 )
  * QR코드 생성(A, B, C)
  * 주행시 각 A, B, C 위치에서 QR을 인식
  * 웹캠에서 A or B or C QR을 인식하면, 인식된 QR의 장소로 이동 후 정지
