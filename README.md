@@ -22,7 +22,9 @@
  * Canny함수 : 경계선(선) 검출
  * HoughLinesP 함수(허프변환) : 직선으로 검출된 Line의 양 끝점을 (x1, y1, x2, y2) 형식으로 data 추출
  * 검출된 각 Line의 x값의 평균 값을 활용하여 무인이동체가 라인을 따라 움직이도록 구현
-
+<p align="center">
+  <img src="라인검출.gif" width="640" height ="480"/>
+</p>
 2. QR코드 생성 및 인식 ( Open CV 라이브러리 사용)
  * QR코드 생성(Start, A, B, C)
  * 웹캠1에서 Start QR을 인식하면, 무인이동체 정지
@@ -41,10 +43,9 @@
 
 1. SSL_SLAM-ROS패키지 사용
  * 인텔 L515 3D 라이다 센서에 적용 가능한 SSL_SLAM 패키지 사용.
- * 다른 패키지(RTABMap, Gmapping등) 사용해 보려고 했으나,
- * RTABMap은 오류와 오차가 많아서 사용하지 않았고,
- * Gmapping은 우리가 사용한 3D 라이다 센서에는 적합하지 않았음
-
+<p align="center">
+  <img src="슬램변환.gif" width="640" height ="480"/>
+</p>
 2. Odometry활용
  * Odometry의 nav_msgs를 활용해 L515의 현재 위치 좌표 값을 사용
  * Quaternion to euler 변환을 통해 L515의 방향 축을 직관적으로 파악하고, 무인이동체의 방향을 제어
