@@ -25,6 +25,7 @@
 <p align="center">
   <img src="라인검출.gif" width="640" height ="480"/>
 </p>
+
 2. QR코드 생성 및 인식 ( Open CV 라이브러리 사용)
  * QR코드 생성(Start, A, B, C)
  * 웹캠1에서 Start QR을 인식하면, 무인이동체 정지
@@ -46,6 +47,7 @@
 <p align="center">
   <img src="슬램변환.gif" width="640" height ="480"/>
 </p>
+
 2. Odometry활용
  * Odometry의 nav_msgs를 활용해 L515의 현재 위치 좌표 값을 사용
  * Quaternion to euler 변환을 통해 L515의 방향 축을 직관적으로 파악하고, 무인이동체의 방향을 제어
