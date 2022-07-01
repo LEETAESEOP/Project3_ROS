@@ -6,9 +6,6 @@
 *학습 및 프로젝트 기간 : * 2022. 01. 18. ~ 2022. 07. 09
 
 ## P1. Line_detect
-<p align="center">
-  <img src="doc/Project_Euler.png">
-</p>
 
 1. Line detection 알고리즘 ( Open CV 라이브러리 사용 )
  * cvtColor 함수 : 영상을 gray스케일로 변환
@@ -29,6 +26,7 @@
  * depth값에 따라 영상 각 픽셀에 “ ,1 ,2 ,3 ,4 ,5 ,6 ,7 ,8” 로 표시되도록 알고리즘 설계
  * 알고리즘에 의해 표시된 값으로 장애물 유 무 판단
  * 장애물을 회피하도록 무인이동체의 속도와 각도를 제어
+
 
 
 ## P2. SLAM
