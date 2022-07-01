@@ -3,7 +3,15 @@
 # P1. Line_detect 최종 완주영상 보기 <<https://youtu.be/rOKRH1QHNEM>>
 # P2. SLAM 최종 완주영상 보기 <<https://youtu.be/sEXM2UTHPX0>>
 
-*학습 및 프로젝트 기간 : * 2022. 01. 18. ~ 2022. 07. 09
+* 학습 및 프로젝트 기간 : * 2022. 01. 18. ~ 2022. 07. 09
+
+## 환경구축 (P1, P2 동일)
+<p align="center">
+  <img src="환경구축_하드웨어.PNG">
+</p>
+<p align="center">
+  <img src="환경구축_개발환경.PNG">
+</p>
 
 ## P1. Line_detect
 
