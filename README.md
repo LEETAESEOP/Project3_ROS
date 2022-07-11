@@ -1,6 +1,7 @@
 # 인공지능을 탑재한 자율주행 물류시스템 (Python, C++, ROS 활용)
 # 프로젝트는 아래와 같이 두가지를 진행함
-# P1. Line_detect 최종 완주영상 보기 <<https://youtu.be/rOKRH1QHNEM>>
+# P1. Line_detect 최종 완주영상 보기 <<https://youtu.be/1eHVhPCRIb8>>
+# P1. Line_detect 장애물 회피영상 보기 <<https://youtu.be/rOKRH1QHNEM>>
 # P2. SLAM 최종 완주영상 보기 <<https://youtu.be/sEXM2UTHPX0>>
 
 * 학습 및 프로젝트 기간 : * 2022. 01. 18. ~ 2022. 07. 09
