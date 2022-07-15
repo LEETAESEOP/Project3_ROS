@@ -1,5 +1,5 @@
 # 인공지능을 탑재한 자율주행 물류시스템 (Python, C++, ROS 활용)
-# 프로젝트는 아래와 같이 두가지를 진행함
+# 프로젝트는 아래와 같이 두가지를 진행함 (아래 각각 P1, P2로 구분)
 # P1. Line_detect 최종 완주영상 보기 <<https://youtu.be/1eHVhPCRIb8>>
 # P1. Line_detect 장애물 회피영상 보기 <<https://youtu.be/rOKRH1QHNEM>>
 # P2. SLAM 최종 완주영상 보기 <<https://youtu.be/sEXM2UTHPX0>>
